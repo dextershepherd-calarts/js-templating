@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>hello world</title>
+  
+  <link rel="stylesheet" href="style.css">
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+  crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.4.2/handlebars.min.js" integrity="sha256-oh7N5nthuhldTk8/34Za7FXv3BkeVN9vAnYk/pLfC78=" crossorigin="anonymous"></script>
+
+  <script src="project.js"></script>
+</head>
+
+<body>
+  <div class="project-title"></div>
+  <div class="project-images"></div>
+  <div class="project-footer"></div>
+</body>
+
+
+<script id="project-title-template" type="text/x-handlebars-template">
+  <div>
+    <h1>{{ title }}</h1>
+    <h3>{{ subtitle }}</h3>
+  </div>
+</script>
+
+<script id="project-image-template" type="text/x-handlebars-template">
+  <img src={{src}}>
+  <p>{{caption}}</p>
+</script>
+
+<script id="project-footer-template" type="text/x-handlebars-template">
+  <div>
+    <p>{{desc}}</p>
+    <a href={{linkHref}}>{{ linkText }}</a>
+  </div>
+</script>
+</html>
+
+
